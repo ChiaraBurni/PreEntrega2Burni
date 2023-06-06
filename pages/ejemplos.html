@@ -4,9 +4,14 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="Pagina educativa flora argentina">
+   <meta name="keywords" content="flora, argentina, briofita, pteridofita, musgo, helecho">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="../Imagenes/favicon.png" type="image/x-icon">
+   <link rel="shortcut icon" href="../Imagenes/favicon.ico" type="image/x-icon">
    <title>Briofitas y Pteridofitas</title>
+   <!--CND Bootstrap-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
    <link rel="stylesheet" href="../css/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,94 +21,186 @@
 <body>
    <div class="grid_ejemplos">
       <header>
-         <div class="contenedor_icono">
-            <a href="../index.html">
-               <img class="icono" src="../Imagenes/icono.png" alt="icono de un helecho">
-            </a>
-         </div>
-         <nav>
-            <ul class="navegacion">
-               <li><a href="../index.html">Inicio</a></li>
-               <li><a href="./diferencias.html">Diferencias</a></li>
-               <li><a href="./ejemplos.html">Ejemplos</a></li>
-               <li><a href="./bibliografia.html">Bibliografia</a></li>
-               <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+         <!--Nav bootstrap-->
+         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="../index.html">
+                  <img class="icono" src="../Imagenes/icono.webp" alt="icono de un helecho">
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="./diferencias.html">Diferencias</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="./ejemplos.html">Ejemplos</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="./bibliografia.html">Bibliografia</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
          </nav>
       </header>
       <main>
-         <section class="intro_ejemplos">
-            <h1>Ejemplos de especies de Briofitas y Pteridofitas</h1>
-            <p>En Argentina, se encuentran diversas especies de briofitas y pteridofitas, que desempeñan roles
-               ecológicos importantes y su diversidad en distintos ambientes hace de Argentina un lugar relevante para
-               su estudio y conservación. A contiuacion se mencionan especies relevantes de ambos grupos:</p>
+         <section class="container text-center ejemplos-intro">
+            <div class="container text-center">
+               <div class="row">
+                  <div class="col">
+                     <div class="intro">
+                        <h1>Ejemplos de especies de Briofitas y Pteridofitas</h1>
+                        <p>En Argentina, se encuentran diversas especies de briofitas y pteridofitas, que desempeñan
+                           roles
+                           ecológicos importantes y su diversidad en distintos ambientes hace de Argentina un lugar
+                           relevante para
+                           su estudio y conservación. A contiuacion se mencionan especies relevantes de ambos grupos:
+                        </p>
+                     </div>
+                  </div>
+               </div>
          </section>
-         <section class="pteridofitas_ejemplos">
+         <section class="ejemplo-pteridofitas">
             <h2>Especies autóctonas de pteridofitas en Argentina:</h2>
 
-            <div class="pteridofitas_ejemplos__card">
-               <div class="card">
-                  <div class="card_img">
-                     <img src="../Imagenes/Alsophila odonelliana.jpeg" alt="Alsophila odonelliana">
+            <div class="container ejemplo-pteridofitas__card">
+               <div class="row">
+                  <div class="col-sm-4 align-self-stretch">
+                     <div class="card">
+                        <div class="card__img">
+                           <img src="../Imagenes/alsophila-odonelliana.webp" alt="Alsophila odonelliana">
+                        </div>
+                        <div class="card__titulo">
+                           <h3>Alsophila odonelliana</h3>
+                        </div>
+                        <div class="card__descripcion">
+                           <p>
+                              Es un helecho arborescente que crece en los bosques tropicales y subtropicales de la
+                              región
+                              norte
+                              de
+                              Argentina. Puede alcanzar hasta 12 metros de altura y sus hojas pueden tener una longitud
+                              de
+                              hasta
+                              3
+                              metros.
+                           </p>
+                        </div>
+                     </div>
                   </div>
-                  <div class="card_titulo">
-                     <h3>Alsophila odonelliana</h3>
+                  <div class="col-sm-4 align-self-stretch">
+                     <div class="card">
+                        <div class="card__img">
+                           <img src="../Imagenes/blechnum-occidentale.webp" alt="Blechnum occidentale">
+                        </div>
+                        <div class="card__titulo">
+                           <h3>Blechnum occidentale</h3>
+                        </div>
+                        <div class="card__descripcion">
+                           <p>Es un helecho de hojas perennes que se encuentra en áreas húmedas y sombreadas de la
+                              región
+                              patagónica
+                              de
+                              Argentina. Sus hojas son estrechas y alargadas, y pueden crecer hasta 50 cm de largo.</p>
+                        </div>
+                     </div>
                   </div>
-                  <div class="card_descripcion">
-                     <p>
-                        Es un helecho arborescente que crece en los bosques tropicales y subtropicales de la región
-                        norte
-                        de
-                        Argentina. Puede alcanzar hasta 12 metros de altura y sus hojas pueden tener una longitud de
-                        hasta
-                        3
-                        metros.
-                     </p>
+                  <div class="col-sm-4 align-self-stretch">
+                     <div class="card">
+                        <div class="card__img">
+                           <img src="../Imagenes/cheilanthes-lanosa.webp" alt="Cheilanthes lanosa">
+                        </div>
+                        <div class="card__titulo">
+                           <h3>Cheilanthes lanosa</h3>
+                        </div>
+                        <div class="card__descripcion">
+                           <p>Es un helecho de hojas perennes que se encuentra en áreas húmedas y sombreadas de la
+                              región
+                              patagónica
+                              de
+                              Argentina. Sus hojas son estrechas y alargadas, y pueden crecer hasta 50 cm de largo.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-sm-4 align-self-stretch">
+                        <div class="card">
+                           <div class="card__img">
+                              <img src="../Imagenes/osmunda-cinnamomea.webp" alt="Osmunda cinnamomea">
+                           </div>
+                           <div class="card__titulo">
+                              <h3>Osmunda cinnamomea</h3>
+                           </div>
+                           <div class="card__descripcion">
+                              <p>Este helecho, también llamado helecho canela, se caracteriza por sus frondes grandes y
+                                 estériles
+                                 de color verde brillante y sus frondes fértiles de color marrón rojizo. Es común
+                                 encontrarlo en
+                                 humedales y márgenes de ríos</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-4 align-self-stretch">
+                        <div class="card">
+                           <div class="card__img">
+                              <img src="../Imagenes/pteridium-arachnoideum.webp" alt="Pteridium arachnoideum">
+                           </div>
+                           <div class="card__titulo">
+                              <h3>Pteridium arachnoideum</h3>
+                           </div>
+                           <div class="card__descripcion">
+                              <p>Conocido comúnmente como helecho de las brujas, es una especie de helecho con frondes
+                                 grandes y
+                                 compuestas. Se caracteriza por sus tallos subterráneos que se extienden horizontalmente
+                                 y
+                                 sus
+                                 frondes con aspecto peludo debido a la presencia de tricomas.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-4 align-self-stretch">
+                        <div class="card">
+                           <div class="card__img">
+                              <img src="../Imagenes/blechnum-buchtienii.webp" alt="Blechnum buchtienii">
+                           </div>
+                           <div class="card__titulo">
+                              <h3>Blechnum buchtienii</h3>
+                           </div>
+                           <div class="card__descripcion">
+                              <p>Este helecho se encuentra principalmente en zonas montañosas de Argentina. Sus frondes
+                                 son
+                                 largas y estrechas, con márgenes ligeramente ondulados. Prefiere hábitats húmedos, como
+                                 bosques
+                                 y cursos de agua.</p>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
-
-               <div class="card">
-                  <div class="card_img">
-                     <img src="../Imagenes/Blechnum occidentale.jpeg" alt="Blechnum occidentale">
-                  </div>
-                  <div class="card_titulo">
-                     <h3>Blechnum occidentale</h3>
-                  </div>
-                  <div class="card_descripcion">
-                     <p>Es un helecho de hojas perennes que se encuentra en áreas húmedas y sombreadas de la región
-                        patagónica
-                        de
-                        Argentina. Sus hojas son estrechas y alargadas, y pueden crecer hasta 50 cm de largo.</p>
-                  </div>
-               </div>
-
-               <div class="card">
-                  <div class="card_img">
-                     <img src="../Imagenes/Cheilanthes lanosa.jpeg" alt="Cheilanthes lanosa">
-                  </div>
-                  <div class="card_titulo">
-                     <h3>Cheilanthes lanosa</h3>
-                  </div>
-                  <div class="card_descripcion">
-                     <p>Es un helecho de hojas perennes que se encuentra en áreas húmedas y sombreadas de la región
-                        patagónica
-                        de
-                        Argentina. Sus hojas son estrechas y alargadas, y pueden crecer hasta 50 cm de largo.</p>
-                  </div>
-               </div>
-            </div>
          </section>
-         <section class="briofitas_ejemplos">
+         <section class="ejemplo-briofita">
             <h2>Especies autóctonas de pteridofitas en Argentina:</h2>
-            <div class="briofitas_ejemplos__card">
+            <div class="container ejemplo-briofita__card">
+               <div class="row">
+                  <div class="col-sm-4 align-self-stretch">
                <div class="card">
-                  <div class="card_img">
-                     <img src="../Imagenes/Bryum argenteum.jpeg" alt="Bryum argenteum">
+                  <div class="card__img">
+                     <img src="../Imagenes/bryum-argenteum.webp" alt="Bryum argenteum">
                   </div>
-                  <div class="card_titulo">
+                  <div class="card__titulo">
                      <h3>Bryum argenteum</h3>
                   </div>
-                  <div class="card_descripcion">
+                  <div class="card__descripcion">
                      <p>
                         Es un musgo que se encuentra en áreas húmedas y sombreadas de las regiones montañosas de
                         Argentina.
@@ -116,14 +213,16 @@
                      </p>
                   </div>
                </div>
+            </div>
+            <div class="col-sm-4 align-self-stretch">
                <div class="card">
-                  <div class="card_img">
-                     <img src="../Imagenes/Leucobryum glaucum.jpeg" alt="Leucobryum glaucum">
+                  <div class="card__img">
+                     <img src="../Imagenes/leucobryum-glaucum.webp" alt="Leucobryum glaucum">
                   </div>
-                  <div class="card_titulo">
+                  <div class="card__titulo">
                      <h3>Leucobryum glaucum</h3>
                   </div>
-                  <div class="card_descripcion">
+                  <div class="card__descripcion">
                      <p>
                         Es un musgo que crece en áreas húmedas y sombreadas de la región andina de Argentina. Se
                         caracteriza
@@ -132,14 +231,16 @@
                      </p>
                   </div>
                </div>
+            </div>
+            <div class="col-sm-4 align-self-stretch">
                <div class="card">
-                  <div class="card_img">
-                     <img src="../Imagenes/Sphagnum magellanicum.jpeg" alt="Sphagnum magellanicum">
+                  <div class="card__img">
+                     <img src="../Imagenes/sphagnum-magellanicum.webp" alt="Sphagnum magellanicum">
                   </div>
-                  <div class="card_titulo">
+                  <div class="card__titulo">
                      <h3>Sphagnum magellanicum</h3>
                   </div>
-                  <div class="card_descripcion">
+                  <div class="card__descripcion">
                      <p>
                         Es un musgo que se encuentra en áreas húmedas y pantanosas de la región patagónica de Argentina.
                         Se
@@ -148,29 +249,79 @@
                   </div>
                </div>
             </div>
+            <div class="col-sm-4 align-self-stretch">
+               <div class="card">
+                  <div class="card__img">
+                     <img src="../Imagenes/marchantia-polymorpha.webp" alt="Marchantia polymorpha">
+                  </div>
+                  <div class="card__titulo">
+                     <h3>Marchantia polymorpha</h3>
+                  </div>
+                  <div class="card__descripcion">
+                     <p>Conocido como hepática común, es un musgo hepático que forma extensas colonias en sustratos
+                        húmedos, como suelos y rocas. Tiene un aspecto plano y presenta estructuras reproductivas en
+                        forma de copa.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4 align-self-stretch">
+               <div class="card">
+                  <div class="card__img">
+                     <img src="../Imagenes/funaria-hygrometrica.webp" alt="Funaria hygrometrica">
+                  </div>
+                  <div class="card__titulo">
+                     <h3>Funaria hygrometrica</h3>
+                  </div>
+                  <div class="card__descripcion">
+                     <p>Conocida como musgo de la tormenta, es una especie que prefiere hábitats abiertos y perturbados,
+                        como campos y áreas urbanas. Sus tallos son altos y delgados, y sus cápsulas contienen esporas
+                        que se dispersan en condiciones húmedas.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4 align-self-stretch">
+               <div class="card">
+                  <div class="card__img">
+                     <img src="../Imagenes/hypnum-cupressiforme.webp" alt="Hypnum cupressiforme">
+                  </div>
+                  <div class="card__titulo">
+                     <h3>Hypnum cupressiforme</h3>
+                  </div>
+                  <div class="card__descripcion">
+                     <p>Es un musgo que se encuentra en áreas húmedas y sombreadas de las regiones boscosas de
+                        Argentina. Tiene una apariencia similar a la de un ciprés y es comúnmente utilizado en la
+                        industria de la jardinería.</p>
+                  </div>
+               </div>
+            </div>
+            </div>
          </section>
       </main>
       <footer>
          <div class="footer_img">
             <a href="../index.html">
-               <img src="../Imagenes/icono.png" alt="icono de un helecho" class="footer_icono">
+               <img src="../Imagenes/icono.webp" alt="icono de un helecho" class="footer_icono">
             </a>
          </div>
          <div class="footer_redes">
             <ul class="lista_redes">
                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="insta"><img
-                        src="../Imagenes/insta.png" alt="icono de instagram"></a></li>
+                        src="../Imagenes/insta.webp" alt="icono de instagram"></a></li>
                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="face"><img
-                        src="../Imagenes/face.png" alt="icono de facebook"></a>
+                        src="../Imagenes/face.webp" alt="icono de facebook"></a>
                </li>
                <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="twitter"><img
-                        src="../Imagenes/twitter.png" alt="icono de twitter"></a>
+                        src="../Imagenes/twitter.webp" alt="icono de twitter"></a>
                </li>
             </ul>
          </div>
       </footer>
 
    </div>
+   <!--CND Bootstrap-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
