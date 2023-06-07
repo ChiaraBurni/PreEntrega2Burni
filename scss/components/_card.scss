@@ -1,0 +1,44 @@
+//card de ejemplos//
+
+.card {
+    border-radius: 0.75rem;
+    background-color: #DFDDC5;
+    width: 25rem;
+    height: 29rem;
+    margin: 1rem;
+
+    &__img {
+        position: relative;
+        background-clip: border-box;
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-radius: 0.75rem;
+        height: 16rem;
+        box-shadow: 2px #1b4332;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.75rem;
+        }
+    }
+
+    &__titulo {
+        color: #1b4332;
+        letter-spacing: 0;
+        line-height: 1.375;
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+
+    }
+
+    &__descripcion {
+        border: none;
+        padding: 1.5em;
+        text-align: center;
+    }
+
+}

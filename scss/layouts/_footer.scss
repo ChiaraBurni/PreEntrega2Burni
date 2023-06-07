@@ -1,0 +1,48 @@
+/*footer*/
+footer {
+  background-color: $verde;
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img {
+      display: flex;
+      align-items: center;
+      img {
+        width: 3rem;
+      }
+    }
+
+    &__redes {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .redes {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        li {
+          margin-left: 10px;
+          a {
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            i {
+              font-size: 2em;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

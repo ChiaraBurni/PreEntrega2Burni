@@ -1,0 +1,22 @@
+//navbar
+.navbar {
+    background-color: #ccd5ae !important;
+
+    li:hover {
+        text-decoration: underline;
+    }
+}
+
+.row {
+    padding: 1rem;
+}
+
+.icono {
+    width: 3rem;
+}
+
+@media screen and (max-width: 420px) {
+    .navbar {
+        text-align: center;
+    }
+}
