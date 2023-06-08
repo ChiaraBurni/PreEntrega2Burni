@@ -1,0 +1,12 @@
+/*bibliografia*/
+.bibliografia{
+    
+        &:hover{
+            margin: 2em;
+            padding: .5em;
+            background-color: $verde;
+            text-align: center;
+            border-radius: 0.75rem;
+        }
+
+}

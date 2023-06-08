@@ -56,7 +56,7 @@
       </nav>
    </header>
    <main>
-      <div class="container form">
+      <div class="container-fluid">
          <div class="row">
             <div class="form__info col-sm-6 align-self-stretch">
                <h2>¡Contactanos!</h2>
@@ -73,7 +73,7 @@
                   Dirección: Avda. Vélez Sarsfield 299, Córdoba, Argentina
                </p>
                <i class="fa-solid fa-phone"></i>
-                  Teléfono: (54) 351 4331056 / 4332104
+               Teléfono: (54) 351 4331056 / 4332104
                </p>
                <p><i class="fa-solid fa-envelope"></i>
                   Correo Electrónico: museo@imbiv.unc.edu.ar</p>
@@ -83,12 +83,30 @@
                   referrerpolicy="no-referrer-when-downgrade">
                </iframe>
             </div>
-            <div class="form__formulario col-sm-6 align-self-stretch">
-               <form action="#" autocomplete="off">
-                  <input type="text" name="nombre" placeholder="Nombre" class="campo">
-                  <input type="email" name="email" placeholder="Email" class="campo">
-                  <textarea name="asunto" placeholder="Asunto"></textarea>
-                  <input type="submit" name="enviar" value="Enviar" class="btn-form">
+            <div class="col-sm-6 align-self-stretch">
+               <form class="form" action="#" autocomplete="off">
+                  <h2>Envianos un mensaje</h2>
+                  <div class="form__container">
+                     <div class="form__group">
+                        <label for="nombre" class="form__label">Nombre: </label>
+                        <input type="text" name="nombre" placeholder=" " class="form__input" id="nombre">
+                        <span class="form__line"></span>
+                     </div>
+                     <div class="form__container">
+                        <div class="form__group">
+                           <label for="email" class="form__label">Email: </label>
+                           <input type="email" name="email" placeholder=" " class="form__input" id="email">
+                           <span class="form__line"></span>
+                        </div>
+                        <div class="form__container">
+                           <div class="form__group">
+                              <label for="asunto" class="form__label">Asunto: </label>
+                              <textarea name="asunto" placeholder=" " class="form__input" id="asunto"></textarea>
+                              <span class="form__line"></span>
+                           </div>
+
+                           <input type="submit" name="enviar" value="Enviar" class="form__submit">
+
                </form>
             </div>
          </div>
@@ -96,20 +114,23 @@
    </main>
    <footer>
       <div class="footer-container">
-        <div class="footer-container__img">
-          <a href="../index.html">
-            <img src="../Imagenes/icono.webp" alt="icono de un helecho" class="footer_icono">
-          </a>
-        </div>
-        <div class="footer-container__redes">
-          <ul class="redes">
-            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="insta"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="face"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="twitter"><i class="fa-brands fa-twitter"></i></a></li>
-          </ul>
-        </div>
+         <div class="footer-container__img">
+            <a href="../index.html">
+               <img src="../Imagenes/icono.webp" alt="icono de un helecho" class="footer_icono">
+            </a>
+         </div>
+         <div class="footer-container__redes">
+            <ul class="redes">
+               <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="insta"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+               <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="face"><i
+                        class="fa-brands fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="twitter"><i
+                        class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+         </div>
       </div>
-    </footer>
+   </footer>
    <!--CND Bootstrap-->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

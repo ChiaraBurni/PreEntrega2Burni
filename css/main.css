@@ -42,11 +42,15 @@ h1 {
 /* UTILITIES */
 /* COMPONENTS */
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 0.75rem;
   background-color: #DFDDC5;
-  width: 25rem;
+  width: 23rem;
   height: 29rem;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .card__img {
   position: relative;
@@ -55,7 +59,8 @@ h1 {
   margin-left: 1rem;
   margin-right: 1rem;
   border-radius: 0.75rem;
-  height: 16rem;
+  width: 21rem;
+  height: 12rem;
   box-shadow: 2px #1b4332;
 }
 .card__img img {
@@ -66,15 +71,14 @@ h1 {
 .card__titulo {
   color: #1b4332;
   letter-spacing: 0;
-  line-height: 1.375;
   font-weight: 600;
   font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem;
   text-align: center;
 }
 .card__descripcion {
   border: none;
-  padding: 1.5em;
+  padding: 1.5rem;
   text-align: center;
 }
 
@@ -105,6 +109,26 @@ header {
     text-align: center;
   }
 }
+.form {
+  margin: auto;
+}
+.form h2 {
+  font-weight: 300;
+}
+.form__container {
+  width: 26em;
+  display: grid;
+  gap: 2.5em;
+}
+.form__group {
+  position: relative;
+}
+.form__input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+}
+
 /*footer*/
 footer {
   background-color: #ccd5ae;
@@ -162,6 +186,15 @@ footer .footer-container__redes .redes li a i {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*bibliografia*/
+.bibliografia:hover {
+  margin: 2em;
+  padding: 0.5em;
+  background-color: #ccd5ae;
+  text-align: center;
+  border-radius: 0.75rem;
 }
 
 /*# sourceMappingURL=main.css.map */

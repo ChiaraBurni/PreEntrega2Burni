@@ -1,1 +1,22 @@
 //form
+.form{
+    margin: auto;
+    h2{
+        font-weight: 300;
+    }
+    &__container{
+        width: 26em;
+        display: grid;
+        gap: 2.5em;
+
+    }
+    &__group{
+        position: relative;
+    }
+    &__input{
+        width: 100%;
+        font-size: 1rem;
+        padding: .6em .3em;
+    }
+
+}
