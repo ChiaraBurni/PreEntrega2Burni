@@ -148,9 +148,15 @@ header {
   padding: 0.6em 0.3em;
 }
 
+@media screen and (max-width: 420px) {
+  .form__container {
+    width: 22em;
+  }
+}
 /*footer*/
 footer {
   background-color: #ccd5ae;
+  margin-top: 1em;
 }
 footer .footer-container {
   display: flex;
