@@ -1,4 +1,4 @@
-/* BASE */
+/* BASE */ /*Normalize*/
 * {
   margin: 0;
   padding: 0;
@@ -34,8 +34,27 @@ h1 {
   color: #1b4332;
 }
 
+/*Font*/
 * {
   font-family: "Lato", sans-serif;
+}
+
+/*colors*/
+/*SASS MAP*/
+.c-verde {
+  color: #ccd5ae;
+}
+
+.c-verdeoscuro {
+  color: #1b4332;
+}
+
+.c-gris {
+  color: #F7F6E7;
+}
+
+.c-marron {
+  color: #DFDDC5;
 }
 
 /* GRID SYSTEM */
@@ -83,10 +102,9 @@ h1 {
 }
 
 /* LAYOUTS */
+/*header*/
 header {
-  background-color: #ccd5ae;
-  display: flex;
-  height: 8vh;
+  background-color: #ccd5ae !important;
 }
 
 .navbar {
@@ -109,6 +127,7 @@ header {
     text-align: center;
   }
 }
+/*form*/
 .form {
   margin: auto;
 }
@@ -169,8 +188,21 @@ footer .footer-container__redes .redes li a i {
   color: black;
 }
 
+/*footer mobile*/
+@media screen and (max-width: 420px) {
+  .footer-container__img {
+    display: none;
+  }
+  .footer-container__redes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 /* VIEWS */
-.pteridofitas-ejemplos h2 {
+/*ejemplos (pages)*/
+.subtitulo-briofitas {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
   padding: 0.1em;
@@ -179,7 +211,7 @@ footer .footer-container__redes .redes li a i {
   align-items: center;
 }
 
-.briofitas_ejemplos h2 {
+.subtitulo-pteridofitas {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
   padding: 0.1em;
@@ -188,7 +220,7 @@ footer .footer-container__redes .redes li a i {
   align-items: center;
 }
 
-/*bibliografia*/
+/*bibliografia (pages)*/
 .bibliografia:hover {
   margin: 2em;
   padding: 0.5em;

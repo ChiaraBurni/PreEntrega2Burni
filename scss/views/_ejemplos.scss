@@ -1,22 +1,10 @@
-.pteridofitas-ejemplos{
-    h2{
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    padding: 0.1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+/*ejemplos (pages)*/
+
+.subtitulo-briofitas{
+    @include subtitulo;
 }
 
-.briofitas_ejemplos{
-    h2{
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    padding: 0.1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+.subtitulo-pteridofitas{
+    @include subtitulo;
 }
 

@@ -1,4 +1,19 @@
+/*colors*/
 $verde:#ccd5ae;
 $verdeoscuro:#1b4332;
 $gris:#F7F6E7;
 $marron:#DFDDC5;
+
+/*SASS MAP*/
+$page-colors: (
+    verde:#ccd5ae,
+    verdeoscuro:#1b4332,
+    gris:#F7F6E7,
+    marron:#DFDDC5
+);
+
+@each $page-color, $color in $page-colors {
+    .c-#{$page-color} {
+        color: $color;
+    }
+}
