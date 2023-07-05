@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #F7F6E7;
+    background-color: $gris;
     margin: 0;
     padding: 0;
     display: flex;
@@ -28,9 +28,12 @@ h1 {
     margin-block-start: 1em;
     margin-block-end: 1em;
     padding: 0.3em;
-    font-weight: bolder;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #1b4332;
+    color: $verdeoscuro;
+}
+
+p{
+    line-height: 200%;
 }
